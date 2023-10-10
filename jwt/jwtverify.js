@@ -27,7 +27,7 @@ async function verifyToken(req, res, next) {
     }
 
     // Token not found in Redis or does not match; check the database
-    const [dbTokenData] = await UserToken.findOne({
+    const dbTokenData = await UserToken.findOne({
       where: {
         user_id,
         token,
