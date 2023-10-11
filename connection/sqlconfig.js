@@ -3,8 +3,8 @@ const Sequelize = require('sequelize');
 config = {
     development: {
       username: 'root',
-      password: '',
-      database: 'jiotraining',
+      password: 'password',
+      database: 'JioTraining',
       host: 'localhost', // MySQL host
       dialect: 'mysql', // Database dialect
     },
